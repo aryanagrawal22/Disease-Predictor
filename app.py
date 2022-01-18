@@ -137,7 +137,9 @@ def predict_strokebase(data:StrokeBase):
         ['Average Glucose Level', 'BMI'])
  
     plt.legend()
-    plt.savefig("../Node Server/public/images/output.jpg")
+    plt.savefig("./output.jpg")
+    with open("output.jpg", "rb") as image2string:
+        converted_string = base64.b64encode(image2string.read())
     
     
    # print(classifier.predict([[variance,skewness,curtosis,entropy]]))
@@ -147,7 +149,8 @@ def predict_strokebase(data:StrokeBase):
     else:
         prediction=0
     return {
-        'prediction': prediction
+        'prediction': prediction,
+        'image': converted_string
     }
 
 
@@ -192,7 +195,9 @@ def predict_hepatitisbase(data:HepatitisBase):
         ["ALB", "ALP", "ALT", "AST", "BIL", "CHE", "CHOL", "CREA", "GGT", "PROT"])
  
     plt.legend()
-    plt.savefig("../Node Server/public/images/output.jpg")
+    plt.savefig("./output.jpg")
+    with open("output.jpg", "rb") as image2string:
+        converted_string = base64.b64encode(image2string.read())
     
     
    # print(classifier.predict([[variance,skewness,curtosis,entropy]]))
@@ -202,7 +207,8 @@ def predict_hepatitisbase(data:HepatitisBase):
     else:
         prediction=0
     return {
-        'prediction': prediction
+        'prediction': prediction,
+        'image': converted_string
     }
 
 # 5. Run the API with uvicorn
