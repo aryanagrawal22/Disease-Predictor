@@ -1,0 +1,100 @@
+Heart
+
+{
+  "age": 63,
+  "sex": 1,
+  "cp": 3,
+  "trestbps": 145,
+  "chol": 233,
+  "fbs": 1,
+  "restecg": 0,
+  "thalach": 150,
+  "exang": 0,
+  "oldpeak": 2.3,
+  "slope": 0,
+  "ca": 0,
+  "thal": 1
+}
+
+Answer: 1
+
+
+
+{
+  "age": 68,
+  "sex": 1,
+  "cp": 2,
+  "trestbps": 180,
+  "chol": 274,
+  "fbs": 1,
+  "restecg": 0,
+  "thalach": 150,
+  "exang": 1,
+  "oldpeak": 1.6,
+  "slope": 1,
+  "ca": 0,
+  "thal": 3
+}
+
+Answer: 0
+
+
+
+
+Stroke
+
+{
+  "gender": 0,
+  "age": 37,
+  "hypertension": 0,
+  "heart_disease": 0,
+  "ever_married": 1,
+  "work_type": 1,
+  "Residence_type": 0,
+  "avg_glucose_level": 82.69,
+  "bmi": 30.6,
+  "smoking_status": 0
+}
+
+Answer: 0
+
+
+
+Hepatitis
+
+
+{
+  "Age": 45,
+  "Sex": 1,
+  "ALB": 29,
+  "ALP": 11.3,
+  "ALT": 7.1,
+  "AST": 101.9,
+  "BIL": 31,
+  "CHE": 1.73,
+  "CHOL": 3.71,
+  "CREA": 76.7,
+  "GGT": 65.6,
+  "PROT": 70
+}
+
+Answer: 1
+
+
+
+{
+  "Age": 32,
+  "Sex": 1,
+  "ALB": 38.5,
+  "ALP": 52.5,
+  "ALT": 7.7,
+  "AST": 22.1,
+  "BIL": 7.5,
+  "CHE": 6.93,
+  "CHOL": 3.23,
+  "CREA": 106,
+  "GGT": 12.1,
+  "PROT": 69
+}
+
+Answer: 0
