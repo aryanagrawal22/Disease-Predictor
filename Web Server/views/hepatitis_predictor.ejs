@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Hepatitis Predictor	</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<!-- -------------------------------------------------------------------------- -->
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/fevicon.ico.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="css/style.css">
+<!-- Colors CSS -->
+<link rel="stylesheet" href="css/colors.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+<!-- [if lt IE 9] -->
+</head>
+<body class="clinic_version">
+   <!-- LOADER -->
+   <!-- <div id="preloader">
+	  <img class="preloader" src="images/loaders/heart-loading2.gif" alt="">
+   </div> -->
+   <!-- END LOADER -->
+
+   
+</head>
+<body>
+
+
+	<!-- ---------------------------------------------------------------- -->
+
+
+	<header>
+		<div class="header-top wow fadeIn">
+		   <div class="container">
+			  <a class="navbar-brand" href="../">Disease-Predictor</a>
+			  
+		   </div>
+		</div>
+		<div class="header-bottom wow fadeIn">
+		   <div class="container">
+			  <nav class="main-menu">
+				 <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				 </div>
+				 
+				 <div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+					   <li><a href="../">Home</a></li>
+					   <li><a data-scroll href="heart_prediction">Heart-Disease Predictor</a></li>
+					   <li><a data-scroll href="stroke_prediction">Stroke Predictor</a></li>
+					   <li><a data-scroll href="">Hepatitis Predictor</a></li>
+					</ul>
+				 </div>
+			  </nav>
+			  
+		   </div>
+		</div>
+	 </header>
+	<!------------------------------------------------------------------- -->
+	
+	<div class="container top-info">
+	<h1>Hepatitis C</h1>
+	<p>Hepatitis C is an inflammation of the liver caused by the hepatitis C virus. The virus can cause both acute and chronic hepatitis, ranging in severity from a mild illness to a serious, lifelong illness including liver cirrhosis and cancer.</p>
+
+	<p>Globally, an estimated 58 million people have chronic hepatitis C virus infection, with about 1.5 million new infections occurring per year. WHO estimated that in 2019, approximately 290 000 people died from hepatitis C, mostly from cirrhosis and hepatocellular carcinoma (primary liver cancer). There is currently no effective vaccine against hepatitis C.</p> 
+	
+	<p>Attribute Information:</p>
+	<ul>
+		<li>1. Age</li>
+		<li>2. Gender</li>
+		<li>3. Albumin Blood Test (ALB)</li>
+		<li>4. Alkaline phosphatase (ALP)</li>
+		<li>5. Alanine Transaminase (ALT)</li>
+		<li>6. Aspartate Transaminase (AST)</li>
+		<li>7. Bilirubin (BIL)</li>
+		<li>8. Acetylcholinesterase (CHE)</li>
+		<li>9. Cholesterol (CHOL)</li>
+		<li>10. Creatinine (CREA)</li>
+		<li>11. Gamma-Glutamyl Transferase (GGT)</li>
+		<li>12. Proteins (PROT)</li>
+	</ul>
+
+	</div>
+	
+	<!-- ---------------------------------------------------------------- -->
+	<div class="container-contact100">
+		
+		<div class="wrap-contact100">
+			<hr class="style1">
+			<form action="/hepatitis_prediction" method="post" class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Hepatitis Predictor
+				</span>
+
+
+				<div  class="wrap-input100 validate-input" data-validate="Field is required">
+					<label class="label-input100" for="name">Age</label>
+					<input id="name" class="input100" type="text" name="age" placeholder="Enter your age...">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input">
+					<div class="label-input100">Gender</div>
+					<div>
+						<select name="name" class="js-select2 input100" name="gender">
+							<option>Please choose</option>
+							<option>Male</option>
+							<option>Female</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+
+
+				<div class="wrap-input100 validate-input" data-validate="Field is required">
+					<label class="label-input100" for="name">Albumin Blood Test (ALB)</label>
+					<input id="name" class="input100" type="text" name="alb" placeholder="Enter your ALB...">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Field is required">
+					<label class="label-input100" for="name">Alkaline phosphatase (ALP)</label>
+					<input id="name" class="input100" type="text" name="alp" placeholder="Enter your ALP...">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Field is required">
+					<label class="label-input100" for="name">Alanine Transaminase (ALT)</label>
+					<input id="name" class="input100" type="text" name="alt" placeholder="Enter your ALT...">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Field is required">
+					<label class="label-input100" for="name">Aspartate Transaminase (AST)</label>
+					<input id="name" class="input100" type="text" name="ast" placeholder="Enter your AST...">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Field is required">
+					<label class="label-input100" for="name">Bilirubin (BIL)</label>
+					<input id="name" class="input100" type="text" name="bil" placeholder="Enter your BIL...">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Field is required">
+					<label class="label-input100" for="name">Acetylcholinesterase (CHE)</label>
+					<input id="name" class="input100" type="text" name="che" placeholder="Enter your CHE...">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Field is required">
+					<label class="label-input100" for="name">Cholesterol (CHOL)</label>
+					<input id="name" class="input100" type="text" name="chol" placeholder="Enter your CHOL...">
+					<span class="focus-input100"></span>
+				</div>
+				
+
+				<div class="wrap-input100 validate-input" data-validate="Field is required">
+					<label class="label-input100" for="name">Creatinine (CREA)</label>
+					<input id="name" class="input100" type="text" name="crea" placeholder="Enter your CREA...">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Field is required">
+					<label class="label-input100" for="name">Gamma-Glutamyl Transferase (GGT)</label>
+					<input id="name" class="input100" type="text" name="ggt" placeholder="Enter your GGT...">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Field is required">
+					<label class="label-input100" for="name">Protiens (PROT)</label>
+					<input id="name" class="input100" type="text" name="prot" placeholder="Enter your PROT...">
+					<span class="focus-input100"></span>
+				</div>
+
+                
+				
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						Predict
+					</button>
+				</div>
+			</form>
+
+			<div class="contact100-more flex-col-c-m" style="background-image: url('images/hepatitis.jpg');">
+			</div>
+		</div>
+	</div>
+
+
+
+	<footer id="footer" class="footer-area wow fadeIn">
+		<div class="container">
+		   <div class="row mx-md-n5">
+			  <div class="col-md-6 px-md-5">
+				 <div class="footer-info padding">
+					<h3>Disease-Predictor</h3>
+					<p>A responsive & ergonomic website to predict the disease from given symptoms and health parameters using machine learning algorithms.</p>
+				 </div>
+			  </div>
+			  <div class="col-md-6 px-md-5">
+				 <div class="footer-info padding">
+					<h3>CONTACT US</h3>
+					<p class = "para"><i class="fa fa-map-marker" aria-hidden="true"></i> Aryan Agrawal</p>
+					<p class = "para"><i class="fa fa-paper-plane" aria-hidden="true"></i> aryanagrawal20023@gmail.com</p>
+					<p class = "para"><i class="fa fa-phone" aria-hidden="true"></i> +91 8451889288</p>
+				 </div>
+			  </div>
+				
+		   </div>
+		</div>
+	 </footer>
+
+
+	 <div class="copyright-area wow fadeIn">
+		<div class="d-flex justify-content-center">
+			<div class="footer-text">
+				<p>© 2021 Aryan Agrawal. All Rights Reserved.</p>
+			</div>  
+		</div>
+	 </div>
+
+
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+		$(".js-select2").each(function(){
+			$(this).on('select2:open', function (e){
+				$(this).parent().next().addClass('eff-focus-selection');
+			});
+		});
+		$(".js-select2").each(function(){
+			$(this).on('select2:close', function (e){
+				$(this).parent().next().removeClass('eff-focus-selection');
+			});
+		});
+
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+	<!-- ----------------------------------------------------------------------- -->
+	<script src="js/all.js"></script>
+	<!-- all plugins -->
+	<script src="js/custom.js"></script>
+	<!-- map -->
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNUPWkb4Cjd7Wxo-T4uoUldFjoiUA1fJc&callback=myMap"></script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Stroke Predictor	</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="shortcut icon" href="images/fevicon.ico.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors.css">
+<link rel="stylesheet" href="css/versions.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/custom.css">
+<script src="js/modernizer.js"></script>
+</head>
+<body class="clinic_version">
+   
+
+   
+</head>
+<body>
+
+
+	<!-- ---------------------------------------------------------------- -->
+
+
+	<header>
+		<div class="header-top wow fadeIn">
+		   <div class="container">
+			  <a class="navbar-brand" href="../">Disease-Predictor</a>
+			  
+		   </div>
+		</div>
+		<div class="header-bottom wow fadeIn">
+		   <div class="container">
+			  <nav class="main-menu">
+				 <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				 </div>
+				 
+				 <div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+					   <li><a href="../">Home</a></li>
+					   <li><a data-scroll href="heart_prediction">Heart-Disease Predictor</a></li>
+					   <li><a data-scroll href="">Stroke Predictor</a></li>
+					   <li><a data-scroll href="hepatitis_prediction">Hepatitis Predictor</a></li>
+					</ul>
+				 </div>
+			  </nav>
+			  
+		   </div>
+		</div>
+	 </header>
+	<!------------------------------------------------------------------- -->
+	
+	<div class="container top-info">
+	<h1>Stroke</h1>
+	<p>Stroke is caused by a blocked blood vessel or bleeding in the brain. The signs of a stroke include a sudden severe headache, weakness, numbness, vision problems, confusion, trouble walking or talking, dizziness and slurred speech.</p>
+
+	<p>Stroke can be fatal. According to the American Heart Association (AHA), the age-adjusted mortality rate for 2017 was 37.6 in every 100,000 stroke diagnoses. Doctors have made a great deal of progress in managing strokes, meaning that this mortality rate is 13.6% lower than it was in 2007.</p> 
+	
+	<p>Attribute Information:</p>
+	<ul>
+		<li>1. Gender</li>
+		<li>2. Age</li>
+		<li>3. Hypertension</li>
+		<li>4. Heart Disease</li>
+		<li>5. Marital Status</li>
+		<li>6. Work Type</li>
+		<li>7. Residence Type</li>
+		<li>8. Average Glucose Level {Range : 40 to 350}</li>
+		<li>9. Body Mass Index (BMI)</li>
+		<li>10. Smoking Status</li>
+	</ul>
+
+	</div>
+	
+	<!-- ---------------------------------------------------------------- -->
+	<div class="container-contact100">
+		
+		<div class="wrap-contact100">
+			<hr class="style1">
+			<form action="/stroke_prediction" method="post" class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Stroke Predictor
+				</span>
+
+
+                <div class="wrap-input100 validate-input">
+					<div class="label-input100">Gender</div>
+					<div>
+						<select class="js-select2 input100" name="gender">
+							<option>Please choose</option>
+							<option>Male</option>
+							<option>Female</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Field is required">
+					<label class="label-input100" for="name">Age</label>
+					<input id="name" class="input100" type="text" name="age" placeholder="Enter your age...">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				
+
+
+				<div class="wrap-input100">
+					<div class="label-input100">HyperTension</div>
+					<div>
+						<select class="js-select2" name="hypertension">
+							<option>Please choose</option>
+							<option>Yes</option>
+							<option>No</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+
+                <div class="wrap-input100">
+					<div class="label-input100">Heart-Disease</div>
+					<div>
+						<select class="js-select2" name="heart_disease">
+							<option>Please choose</option>
+							<option>Yes</option>
+							<option>No</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+
+                <div class="wrap-input100">
+					<div class="label-input100">Marital Status</div>
+					<div>
+						<select class="js-select2" name="ever_married">
+							<option>Please choose</option>
+							<option>Yes</option>
+							<option>No</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+
+                <div class="wrap-input100">
+					<div class="label-input100">Work Type</div>
+					<div>
+						<select class="js-select2" name="work_type">
+							<option>Please choose</option>
+							<option>Private</option>
+							<option>Self-Employed</option>
+                            <option>Government-Job</option>
+                            <option>Children</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+
+
+                
+                <div class="wrap-input100">
+					<div class="label-input100">Residence Type</div>
+					<div>
+						<select class="js-select2" name="Residence_type">
+							<option>Please choose</option>
+							<option>Urban</option>
+							<option>Rural</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+
+
+				<div class="wrap-input100 validate-input" data-validate="Field is required">
+					<label class="label-input100" for="name">Average Glucose Level</label>
+					<input id="name" class="input100" type="text" name="avg_glucose_level" placeholder="Enter your average glucose level...">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="wrap-input100 validate-input" data-validate="Field is required">
+					<label class="label-input100" for="name">Body Mass Index (BMI)</label>
+					<input id="name" class="input100" type="text" name="bmi" placeholder="Enter your BMI...">
+					<span class="focus-input100"></span>
+				</div>
+
+
+                <div class="wrap-input100">
+					<div class="label-input100">Smoking Status</div>
+					<div>
+						<select class="js-select2" name="smoking_status">
+							<option>Please choose</option>
+							<option>Never Smoked</option>
+							<option>Formerly Smoked</option>
+                            <option>Smokes</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						Predict
+					</button>
+				</div>
+			</form>
+
+			<div class="contact100-more flex-col-c-m" style="background-image: url('images/stroke.jpg');">
+			</div>
+		</div>
+	</div>
+
+
+
+	<footer id="footer" class="footer-area wow fadeIn">
+		<div class="container">
+		   <div class="row mx-md-n5">
+			  <div class="col-md-6 px-md-5">
+				 <div class="footer-info padding">
+					<h3>Disease-Predictor</h3>
+					<p>A responsive & ergonomic website to predict the disease from given symptoms and health parameters using machine learning algorithms.</p>
+				 </div>
+			  </div>
+			  <div class="col-md-6 px-md-5">
+				 <div class="footer-info padding">
+					<h3>CONTACT US</h3>
+					<p class = "para"><i class="fa fa-map-marker" aria-hidden="true"></i> Aryan Agrawal</p>
+					<p class = "para"><i class="fa fa-paper-plane" aria-hidden="true"></i> aryanagrawal20023@gmail.com</p>
+					<p class = "para"><i class="fa fa-phone" aria-hidden="true"></i> +91 8451889288</p>
+				 </div>
+			  </div>
+				
+		   </div>
+		</div>
+	 </footer>
+
+
+	 <div class="copyright-area wow fadeIn">
+		<div class="d-flex justify-content-center">
+			<div class="footer-text">
+				<p>© 2021 Aryan Agrawal. All Rights Reserved.</p>
+			</div>  
+		</div>
+	 </div>
+
+
+
+
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+		$(".js-select2").each(function(){
+			$(this).on('select2:open', function (e){
+				$(this).parent().next().addClass('eff-focus-selection');
+			});
+		});
+		$(".js-select2").each(function(){
+			$(this).on('select2:close', function (e){
+				$(this).parent().next().removeClass('eff-focus-selection');
+			});
+		});
+
+	</script>
+
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script src="js/main.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+	<script src="js/all.js"></script>
+	<script src="js/custom.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNUPWkb4Cjd7Wxo-T4uoUldFjoiUA1fJc&callback=myMap"></script>
+</body>
+</html>

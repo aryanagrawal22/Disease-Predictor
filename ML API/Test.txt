@@ -1,0 +1,59 @@
+Heart
+
+{
+  "age": 63,
+  "sex": 1,
+  "cp": 3,
+  "trestbps": 145,
+  "chol": 233,
+  "fbs": 1,
+  "restecg": 0,
+  "thalach": 150,
+  "exang": 0,
+  "oldpeak": 2.3,
+  "slope": 0,
+  "ca": 0,
+  "thal": 1
+}
+
+Answer: 1
+
+
+
+
+Stroke
+
+{
+  "gender": 0,
+  "age": 37,
+  "hypertension": 0,
+  "heart_disease": 0,
+  "ever_married": 1,
+  "work_type": 1,
+  "Residence_type": 0,
+  "avg_glucose_level": 82.69,
+  "bmi": 30.6,
+  "smoking_status": 0
+}
+
+Answer: 0
+
+
+
+
+Hepatitis
+
+{
+  "Age": 49,
+  "Sex": 2,
+  "ALB": 33,
+  "ALP": 190.7,
+  "ALT": 1.2,
+  "AST": 36.3,
+  "BIL": 7,
+  "CHE": 6.92,
+  "CHOL": 3.82,
+  "CREA": 485.9,
+  "GGT": 112,
+  "PROT": 59.5
+}
