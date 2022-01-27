@@ -1,45 +1,46 @@
-usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
-           <command> [<args>]
+# Disease-Predictor
 
-These are common Git commands used in various situations:
+## A responsive & ergonomic website to predict the disease from given symptoms and health parameters using machine learning algorithms.
 
-start a working area (see also: git help tutorial)
-   clone     Clone a repository into a new directory
-   init      Create an empty Git repository or reinitialize an existing one
+### Repo Info - There are *three branches*
 
-work on the current change (see also: git help everyday)
-   add       Add file contents to the index
-   mv        Move or rename a file, a directory, or a symlink
-   restore   Restore working tree files
-   rm        Remove files from the working tree and from the index
+#### 1) Main - Contains Readme File (Project Info)
+#### 2) Server - Contains Web Hosted Project (Node)
+#### 3) API - Contains ML Hosted Project (FastAPI)
 
-examine the history and state (see also: git help revisions)
-   bisect    Use binary search to find the commit that introduced a bug
-   diff      Show changes between commits, commit and working tree, etc
-   grep      Print lines matching a pattern
-   log       Show commit logs
-   show      Show various types of objects
-   status    Show the working tree status
+### Overview :
+The model predicting the disease is trained in using Machine Learning and then using a Framework called FastAPI (like flask) in python,  the model is loaded and hosted on a web hosting service. This then acts as an API that receives and sends predictions and graphs as a result to our main backend server. On the Frontend when the user input the data into the parameters, the data is sent to the backend, and then to the API  which is then predicting the outcome of the model. The result is then displayed on the frontend when received on the server.
 
-grow, mark and tweak your common history
-   branch    List, create, or delete branches
-   commit    Record changes to the repository
-   merge     Join two or more development histories together
-   rebase    Reapply commits on top of another base tip
-   reset     Reset current HEAD to the specified state
-   switch    Switch branches
-   tag       Create, list, delete or verify a tag object signed with GPG
+### Hosted Link :
 
-collaborate (see also: git help workflows)
-   fetch     Download objects and refs from another repository
-   pull      Fetch from and integrate with another repository or a local branch
-   push      Update remote refs along with associated objects
+#### -- Website :
+[![Link](https://api.iconify.design/bx/bx-link-external.svg?color=white&width=40&height=40)](https://disease-predict-website.herokuapp.com/)
 
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
+#### -- ML API :
+[![Link](https://api.iconify.design/bx/bx-link-external.svg?color=white&width=40&height=40)](https://disease-predict-api.herokuapp.com/docs)
+
+### Features :
+
+- Predicts disease by given symptoms and health parameters
+- 3 types of disease prediction ( heart, stroke and hepatitis)
+- Extensive comparsion of parameters is given through a graph
+- High accuracy and easy to use interface
+
+### Tech :
+
+Disease Predictor uses a number of different technologies like: <br/> <br/>
+![Python](https://api.iconify.design/akar-icons/python-fill.svg?color=white&width=50&height=50)
+![FastAPI](https://api.iconify.design/simple-icons/fastapi.svg?color=white&width=50&height=50)
+![ScikitLearn](https://api.iconify.design/simple-icons/scikitlearn.svg?color=white&width=50&height=50)
+![Numpy](https://api.iconify.design/file-icons/numpy.svg?color=white&width=50&height=50)
+![Pandas](https://api.iconify.design/simple-icons/pandas.svg?color=white&width=50&height=50)
+![Node,js](https://api.iconify.design/akar-icons/node-fill.svg?color=white&width=50&height=50)
+![EJS](https://api.iconify.design/file-icons/ejs.svg?color=white&width=50&height=50)
+- [FastAPI] - Fast web framework for building APIs with Python
+- [Scikit-learn] - Tools for predictive data analysis
+- [Matplotlib] - Library for creating static, animated, and interactive visualizations
+- [Numpy] -  Library used for working with array, algebra and matrices
+- [Pandas] - Library used for data analysis
+- [Node.js] - Evented I/O for the backend
+- [Express] - Fast node.js network app framework 
+- [EJS] - Embedded JavaScript templating engine
